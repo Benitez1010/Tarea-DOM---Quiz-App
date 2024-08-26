@@ -11,13 +11,17 @@
 
 <body>
   <main>
+    <!-- Barra superior que muestra el tema actual del cuestionario y el interruptor de modo claro/oscuro -->
     <article class="fila-superior">
+      <!-- Tema actual del cuestionario -->
       <div class="tema-actual">
         <div class="contenedor-icono-boton">
           <img class="img-tema" src="https://res.cloudinary.com/dqo8icjui/image/upload/v1724568695/css_ezbwch.svg" alt="icono del tema">
         </div>
+        <!-- El título del tema se actualizará dinámicamente con JavaScript -->
         <h2 class="tema-elegido">Algún Tema</h2>
       </div>
+      <!-- Interruptor para cambiar entre modo claro y oscuro -->
       <div class="alternar-claro-oscuro">
         <div class="contenedor-sol">
           <img src="" alt="imagen de sol">
@@ -40,7 +44,9 @@
         <p>Elige un tema para comenzar.</p>
       </div>
 
+      <!-- Botones para seleccionar el tema del cuestionario -->
       <div class="opciones">
+        <!-- Estos botones se llenarán dinámicamente con los datos del JSON -->
         <button id="HTML" class="tipo-cuestionario">
           <div class="contenedor-icono-boton">
             <img src="https://res.cloudinary.com/dqo8icjui/image/upload/v1724568696/html_dj8j5j.svg" alt="icono html">
@@ -65,13 +71,77 @@
         </button>
       </div>
     </article>
+    <!-- Fin del menú del cuestionario -->
 
-    <!-- Fin de la pantalla principal -->
+    <!-- Inicio de la pantalla de preguntas -->
+    <article class="pantalla-pregunta">
+      <div class="contenido-izquierda">
+        <div class="envoltorio-pregunta">
+          <!-- El número de pregunta y total se actualizarán con JavaScript -->
+          <p class="contador-pregunta">Pregunta <span class="numero-pregunta"><!-- número --></span> de <span
+              class="total-preguntas"><!-- total --></span></p>
+          <!-- La pregunta se llenará dinámicamente desde el JSON -->
+          <h2 class="pregunta">Marcador de posición</h2>
+        </div>
+        <!-- Barra de progreso que se actualizará con JavaScript -->
+        <div class="barra-progreso completa">
+          <div class="barra-progreso completada">
+          </div>
+        </div>
+      </div>
+      <!-- Opciones de respuesta y botón de envío -->
+      <div class="opciones alternativas">
+        <!-- Estas opciones se llenarán dinámicamente desde el JSON -->
+        <button id="A" class="alternativa">
+          <div class="caja-opcion">A</div>
+        </button>
+        <button id="B" class="alternativa">
+          <div class="caja-opcion">B</div>
+        </button>
+        <button id="C" class="alternativa">
+          <div class="caja-opcion">C</div>
+        </button>
+        <button id="D" class="alternativa">
+          <div class="caja-opcion">D</div>
+        </button>
 
-    
-  
-    </main>
-    
-  </body>
-  
-  </html>
+        <button class="enviar-respuesta">Enviar respuesta</button>
+        <!-- Mensaje de error que se mostrará si no se selecciona una respuesta -->
+        <div class="aviso-seleccion">
+          <img src="https://res.cloudinary.com/dqo8icjui/image/upload/v1724568692/error_aux959.svg" alt="icono de error">
+          <p class="texto-aviso-seleccion">Por favor, selecciona una respuesta</p>
+        </div>
+      </div>
+    </article>
+    <!-- Fin de la pantalla de preguntas -->
+
+    <!-- Inicio de la pantalla de cuestionario completado -->
+    <article class="cuestionario-completado">
+      <div class="completado-izquierda">
+        <h1>Cuestionario completado
+          <br><span class="puntuado">Has obtenido...</span>
+        </h1>
+      </div>
+
+      <div class="completado-derecha">
+        <div class="contenedor-puntuacion">
+          <!-- Se mostrará el tema completado -->
+          <div class="final tema-actual">
+            <div class="contenedor-icono-boton">
+              <img class="img-tema" src="https://res.cloudinary.com/dqo8icjui/image/upload/v1724568695/css_ezbwch.svg" alt="icono del tema">            </div>
+            <h2 class="tema-elegido">Algún Tema</h2>
+          </div>
+          <!-- La puntuación final se llenará con JavaScript -->
+          <h1 class="puntuacion-final"><!-- puntuación --></h1>
+          <p class="puntuacion-de">de <span class="total-preguntas-completadas">totalPreguntas</span></p>
+        </div>
+        <button class="reiniciar">Jugar de nuevo</button>
+      </div>
+    </article>
+    <!-- Fin de la pantalla de cuestionario completado -->
+
+  </main>
+  <script src="./app.js"></script>
+</body>
+
+</html>
