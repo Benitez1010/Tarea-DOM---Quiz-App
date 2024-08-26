@@ -20,3 +20,34 @@ themeSwitch.addEventListener('change', () => {
     }
 });
 
+//**Selección de Tema del Cuestionario**
+document.addEventListener("DOMContentLoaded", function() {
+    // Hacer visible la pantalla de inicio
+    const menuInicio = document.querySelector('.menu-inicio');
+    if (menuInicio) {
+        menuInicio.classList.add('visible');
+    }
+
+    // Selección de tema del cuestionario
+    const temaActual = document.querySelector('.tema-actual');
+    const temaElegido = document.querySelector('.tema-elegido');
+    const imgTema = document.querySelector('.img-tema');
+    const botonesTemas = document.querySelectorAll('.tipo-cuestionario');
+
+    botonesTemas.forEach(boton => {
+        boton.addEventListener('click', function() {
+            const tema = this.id;
+            temaElegido.textContent = tema;
+            temaActual.style.visibility = 'visible';
+
+            // Cambiar la imagen del tema según el botón seleccionado
+            const imgSrc = this.querySelector('img').src;
+            imgTema.src = imgSrc;
+        });
+    });
+});
+
+//
+
+
+
