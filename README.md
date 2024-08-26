@@ -45,7 +45,7 @@ QuizApp es una aplicación web interactiva que permite a los usuarios responder 
 - **Rolando Andrade**
 - **Angel Ventura**
 - **Gabriela Canales**
-- ****
+- **Rodrigo Benitez**
 
 ## Contribuciones
 
