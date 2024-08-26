@@ -175,7 +175,6 @@ document.querySelectorAll(".tipo-cuestionario").forEach(boton => {
 
 
 
-
 /*
 
 
