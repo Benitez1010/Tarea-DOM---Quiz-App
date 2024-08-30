@@ -38,6 +38,15 @@ document.addEventListener("DOMContentLoaded", () => {
     const preguntas = {
         HTML: [
             { pregunta: "¿Qué es HTML?", opciones: ["Lenguaje de estilo", "Lenguaje de marcado", "Lenguaje de programación", "Lenguaje de consulta"], respuestaCorrecta: "Lenguaje de marcado" },
+            { pregunta: "¿Qué etiqueta se utiliza para crear un párrafo en HTML?", opciones: ["<div>", "<p>", "<span>", "<br>"], respuestaCorrecta: "<p>" },
+            { pregunta: "¿Cuál es la etiqueta HTML correcta para insertar una imagen?", opciones: ["<image>", "<picture>", "<img>", "<src>"], respuestaCorrecta: "<img>" },
+            { pregunta: "¿Cómo defines un encabezado de primer nivel en HTML?", opciones: ["<heading>", "<header>", "<h1>", "<h6>"], respuestaCorrecta: "<h1>" },
+            { pregunta: "¿Cuál es la etiqueta correcta para un enlace en HTML?", opciones: ["<link>", "<a>", "<url>", "<href>"], respuestaCorrecta: "<a>" },
+            { pregunta: "¿Cuál de las siguientes etiquetas se usa para crear una lista desordenada?", opciones: ["<list>", "<ol>", "<ul>", "<li>"], respuestaCorrecta: "<ul>" },
+            { pregunta: "¿Qué atributo se utiliza para establecer un vínculo en un enlace <a>", opciones: ["src", "link", "href", "url"], respuestaCorrecta: "<href>" },
+            { pregunta: "¿Cómo se comenta en HTML?", opciones: ["<!-- comentario -->", "// comentario", "/* comentario */", "# comentario"], respuestaCorrecta: "<!-- comentario -->" },
+            { pregunta: "¿Cuál es la etiqueta correcta para una tabla en HTML?", opciones: ["<table>", "<tab>", "<tbody>", "<tbl>"], respuestaCorrecta: "<table>" },
+            { pregunta: "¿Cuál es la etiqueta correcta para un formulario en HTML?", opciones: ["<input>", "<form>", "<fieldset>", "<submit>"], respuestaCorrecta: "<form>" },
             // Agregar más preguntas aquí
         ],
         CSS: [
